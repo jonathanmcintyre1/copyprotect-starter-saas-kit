@@ -1,5 +1,0 @@
-
-User-agent: *
-Allow: /
-
-Sitemap: https://imageguardian.com/sitemap.xml
