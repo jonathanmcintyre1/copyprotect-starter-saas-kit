@@ -1,73 +1,153 @@
-# Welcome to your Lovable project
+# Best SaaS Kit Pro 🚀
 
-## Project info
+A modern, production-ready SaaS starter kit built with Next.js 15, TypeScript, Tailwind CSS, and more. Perfect for launching your next SaaS project quickly and efficiently.
 
-**URL**: https://lovable.dev/projects/a83042e3-53e6-41f0-a9a6-5889c2b66354
+![SaaS Kit Banner](public/Saas-Header.png)
 
-## How can I edit this code?
+## 🌟 Features
 
-There are several ways of editing your application.
+- ⚡ **Next.js 15** with App Router & Server Actions
+- 🎨 **Tailwind CSS 3.3** & **shadcn/ui** for beautiful UI
+- 📱 **Fully Responsive** design
+- 🔐 **Authentication** with Supabase
+- 💳 **Stripe Integration** for payments
+- 📧 **Email Integration** with Resend
+- 🎯 **SEO Optimized**
+- 🌙 **Dark Mode** ready
+- 🔍 **Type Safe** with TypeScript 5.3
 
-**Use Lovable**
+## 🚀 Getting Started
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a83042e3-53e6-41f0-a9a6-5889c2b66354) and start prompting.
+### Prerequisites
 
-Changes made via Lovable will be committed automatically to this repo.
+Before you begin, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (version 18.17 or higher)
+- [Git](https://git-scm.com/)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
 
-**Use your preferred IDE**
+### Step-by-Step Installation Guide
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/zainulabedeen123/best-saas-kit.git
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+2. **Navigate to Project Directory**
+   ```bash
+   cd best-saas-kit
+   ```
 
-Follow these steps:
+3. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+4. **Set Up Environment Variables**
+   - Copy the example environment file:
+     ```bash
+     cp .env.example .env.local
+     ```
+   - Open `.env.local` and fill in your environment variables:
+     ```env
+     # App
+     NEXT_PUBLIC_APP_URL=http://localhost:3000
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+     # Supabase
+     NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+     NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+     SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
 
-# Step 3: Install the necessary dependencies.
-npm i
+     # Stripe
+     STRIPE_SECRET_KEY=your_stripe_secret_key
+     STRIPE_WEBHOOK_SECRET=your_webhook_secret
+     NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_publishable_key
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+     # Email (Resend)
+     RESEND_API_KEY=your_resend_api_key
+     ```
+
+5. **Run Development Server**
+   ```bash
+   npm run dev
+   ```
+
+6. **Open Your Browser**
+   Visit [http://localhost:3000](http://localhost:3000) to see your application running.
+
+## 🔧 Configuration Guide
+
+### Setting Up Supabase
+
+1. Create a [Supabase](https://supabase.com/) account
+2. Create a new project
+3. Go to Project Settings > API
+4. Copy the URL and anon key to your `.env.local`
+
+### Setting Up Stripe
+
+1. Create a [Stripe](https://stripe.com/) account
+2. Get your API keys from the Stripe Dashboard
+3. Add them to your `.env.local`
+4. Set up webhook endpoints (detailed in documentation)
+
+### Setting Up Email with Resend
+
+1. Create a [Resend](https://resend.com/) account
+2. Get your API key
+3. Add it to your `.env.local`
+
+## 📚 Project Structure
+
+```
+best-saas-kit/
+├── src/
+│   ├── app/             # Next.js app router pages
+│   ├── components/      # React components
+│   ├── lib/            # Utility functions
+│   └── styles/         # Global styles
+├── public/             # Static assets
+├── prisma/            # Database schema
+└── ...config files
 ```
 
-**Edit a file directly in GitHub**
+## 🛠️ Development Tools
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- **Code Quality**
+  - ESLint for code linting
+  - Prettier for code formatting
+  - TypeScript for type safety
 
-**Use GitHub Codespaces**
+- **Git Hooks**
+  - Husky for Git hooks
+  - lint-staged for staged files linting
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🤝 Contributing
 
-## What technologies are used for this project?
+We welcome contributions! Please feel free to submit a Pull Request.
 
-This project is built with:
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📝 License
 
-## How can I deploy this project?
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Simply open [Lovable](https://lovable.dev/projects/a83042e3-53e6-41f0-a9a6-5889c2b66354) and click on Share -> Publish.
+## 🙏 Acknowledgments
 
-## Can I connect a custom domain to my Lovable project?
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Supabase](https://supabase.com/)
+- [Stripe](https://stripe.com/)
+- [Resend](https://resend.com/)
 
-Yes, you can!
+## 💬 Support
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+If you have any questions or need help, please open an issue or contact us at info@themetaversecompany.uk
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+---
+
+Built with ❤️ by [Zain UI Abedeen](https://github.com/zainulabedeen123)
